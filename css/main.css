@@ -164,11 +164,26 @@ a:visited {
 	text-decoration: none;
 }
 
-a:hover {
+.intro a {
+	color: #C3FFAD;
+}
+
+.intro a:hover {
+	color: #76F54A;
+	border-bottom: 1px solid #76F54A;
+}
+
+a:hover,
+a:active,
+a:focus {
 	color: #76F54A;
 }
 
-
+#adina,
+#baxter,
+#wedding {
+	outline: 0;
+}
 
 
 
