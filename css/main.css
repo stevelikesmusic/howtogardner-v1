@@ -158,6 +158,10 @@ h1 {
 	margin: 0 auto;
 }
 
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
 a,
 a:visited {
 	color: white;
@@ -184,6 +188,59 @@ a:focus {
 #wedding {
 	outline: 0;
 }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.right a {
+	color: #2CA900;
+}
+
+.footer a:hover {
+	color: #76F54A;
+}
+
+.social {
+	list-style: none;
+	display: inline;
+	padding-left: 0;	
+}
+
+.social li {
+	display: inline;
+}
+
+.social li a {
+	margin-right: .625em;
+	padding: .3125em;
+}
+
+.flaticon-email::before {
+	padding-top: -5px;
+}
+
+.left span {
+	padding-left: .3125em;
+}
+
+.left, 
+.right {
+	margin: 0 2em;
+}
+
+
+
+
+
+
+
+
 
 
 

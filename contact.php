@@ -11,5 +11,6 @@ include(ROOT_PATH . 'inc/header.php');
 			<p>A project. A friendship. A plan to take over the world.</p>
 			<p>Want to drop me line? I'd love to collaborate on a build. If you'd like, check out some of the <a href="<?php echo BASE_URL . 'projects.php'; ?>">little learning projects</a> I've been working on. Dangling preposition.</p>
 		</div>
+		<form method='post' action='contact.php'></form>
 
 <?php include(ROOT_PATH . 'inc/footer.php');
