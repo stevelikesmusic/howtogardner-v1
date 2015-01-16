@@ -1,6 +1,8 @@
 <?php 
 require_once('inc/config.php');
 
+$pageTitle = 'About | How to Gardner';
+$section = 'about';
 include(ROOT_PATH . 'inc/header.php');
 ?>
 

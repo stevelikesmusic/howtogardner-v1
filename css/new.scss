@@ -97,9 +97,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+$primary-color: #76F54A;
+$secondary-color: #2CA900;
+$link: #C3FFAD;
+$primary-text: #eee;
+
+
 body {
 	background: #000;
-	color: #eee;
+	color: $primary-text;
 }
 
 header {
@@ -114,19 +120,16 @@ header {
 
 nav {
 	margin: 0 auto;
-}
-
-nav ul {
-	padding: 0;
-}
-
-nav li {
-	display: inline;
-	margin: .5em;
-}
-
-nav li a {
-	padding: .5em;
+  ul {
+	  padding: 0;
+  }
+  li {
+	  display: inline;
+    margin: .5em;
+    a {
+	     padding: .5em;
+    }
+  }  
 }
 
 img {
@@ -150,13 +153,13 @@ h1 {
 	padding: 0 1em;
 	max-width: 480px;
 	margin: 0 auto;
+  h1 {
+    font-size: 1.25em;
+    max-width: 410px;
+    margin: 0 auto;
+  }
 }
 
-.intro h1 {
-	font-size: 1.25em;
-	max-width: 410px;
-	margin: 0 auto;
-}
 
 
 
@@ -191,7 +194,7 @@ input {
 
 input:focus, 
 textarea:focus {
-	box-shadow: 0 0 5px 2px #2CA900;
+	box-shadow: 0 0 5px 2px $secondary-color;
 }
 
 textarea {
@@ -202,8 +205,8 @@ textarea {
 #submit {
 	width: 94%;
 	height: 2.5em;
-	background: #2CA900;
-	color: #fff;
+	background: $secondary-color;
+	color: $primary-text;
 	margin-bottom: 2em;
 }
 
@@ -221,29 +224,26 @@ textarea {
 .footer {
 	display: flex;
 	justify-content: space-between;
+  a:hover {
+	   color: $primary-color;
+  }
 }
 
 .right a {
-	color: #2CA900;
-}
-
-.footer a:hover {
-	color: #76F54A;
+	color: $secondary-color;
 }
 
 .social {
 	list-style: none;
 	display: inline;
 	padding-left: 0;	
-}
-
-.social li {
-	display: inline;
-}
-
-.social li a {
-	margin-right: .625em;
-	padding: .3125em;
+  li {
+	   display: inline;
+     a {
+	     margin-right: .625em;
+	     padding: .3125em;
+     }
+  }
 }
 
 .flaticon-email::before {
@@ -265,27 +265,6 @@ textarea {
    Links
    ========================================================================== */
 
-a,
-a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-.intro a {
-	color: #C3FFAD;
-}
-
-.intro a:hover {
-	color: #76F54A;
-	border-bottom: 1px solid #76F54A;
-}
-
-a:hover,
-a:active,
-a:focus {
-	color: #76F54A;
-}
-
 #adina,
 #baxter,
 #wedding {
@@ -300,10 +279,29 @@ a:focus {
    ========================================================================== */
 
 li .on {
-	color: #76F54A;
+	color: $primary-color;
 }
 
+a,
+a:visited {
+	color: $primary-text;
+	text-decoration: none;
+}
 
+.intro a {
+	color: $link;
+}
+
+.intro a:hover {
+	color: $primary-color;
+	border-bottom: 1px solid $primary-color;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: $primary-color;
+}
 
 
 
