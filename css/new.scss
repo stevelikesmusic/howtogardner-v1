@@ -214,6 +214,15 @@ textarea {
 	background: #64A857;
 }
 
+.thanks {
+	font-size: 18px;
+	margin-top: 20px;
+	color: $secondary-color;
+}
+
+#address {
+	display: none;
+}
 
 
 
@@ -227,11 +236,15 @@ textarea {
   a:hover {
 	   color: $primary-color;
   }
+	.right a {
+		 color: $secondary-color;
+		 :hover {
+		 		color: $primary-color;
+		 }
+	}
 }
 
-.right a {
-	color: $secondary-color;
-}
+
 
 .social {
 	list-style: none;
@@ -278,7 +291,7 @@ textarea {
    Colors
    ========================================================================== */
 
-li .on {
+nav li .on {
 	color: $primary-color;
 }
 

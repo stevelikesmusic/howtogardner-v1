@@ -165,6 +165,14 @@ textarea {
 #submit:hover {
   background: #64A857; }
 
+.thanks {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #2CA900; }
+
+#address {
+  display: none; }
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -173,9 +181,10 @@ textarea {
   justify-content: space-between; }
   .footer a:hover {
     color: #76F54A; }
-
-.right a {
-  color: #2CA900; }
+  .footer .right a {
+    color: #2CA900; }
+    .footer .right a :hover {
+      color: #76F54A; }
 
 .social {
   list-style: none;

@@ -10,7 +10,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$email_body = $email_body . "Email: " . $email . "<br>";
 	$email_body = $email_body . "Message: " . $message;
 
-
+	if ($name == "" || $email == "" || $message == "") {
+		exit; 
+	}
+	
+	foreach ($_POST as $value) {
+		if (stripos($value, 'Content-Type:') !== FALSE {
+			exit;
+		}
+	}
+				
+	if ($_POST['address'] !== "") {
+		exit;
+	} 			
+	
 	date_default_timezone_set('Etc/UTC');
 	require(ROOT_PATH . 'inc/phpmailer/PHPMailerAutoload.php');
 
@@ -58,7 +71,7 @@ include(ROOT_PATH . 'inc/header.php');
 						<input type='text' name='name' id='form-name' placeholder='Name'>
 						<input type='email' name='email' id='form-email' placeholder='Email'>
 						<textarea name='message' id='message' placeholder='Your incredible message'></textarea>
-						<input type='hidden' name='test' id='test' placeholder="What's 2 + 2?">
+						<input type='text' name='address' id='address' placeholder="Address">
 						<button type='submit' name='submit' id='submit'>Send to Steve!</button>
 					</form>
 				<?php } ?>
