@@ -29,7 +29,7 @@
 					<li><a class="<?php if ($section == 'about') {echo 'on';} ?>" href="<?php echo BASE_URL . 'about.php'; ?>">About</a></li>
 					<li><a class="<?php if ($section == 'projects') {echo 'on';} ?>" href="<?php echo BASE_URL . 'projects.php'; ?>">Projects</a></li>
 					<li><a class="<?php if ($section == 'contact') {echo 'on';} ?>" href="<?php echo BASE_URL . 'contact.php'; ?>">Contact</a></li>
-					<li><a class="<?php if ($section == 'blog') {echo 'on';} ?>" href="#">Blog</a></li>
+					<li><a class="<?php if ($section == 'blog') {echo 'on';} ?>" href="<?php echo BASE_URL . 'blog/'; ?>">Blog</a></li>
 				</ul>
 			</nav>
 		</header>

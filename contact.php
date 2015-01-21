@@ -2,20 +2,24 @@
 require_once('inc/config.php');
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-	$name = trim($_POST['name']);
+	$name = trim($_POST['name']);	
 	$email = trim($_POST['email']);
 	$message = trim($_POST['message']);
 	$email_body = "";
 	$email_body = $email_body . "Name: " . $name . "<br>";
 	$email_body = $email_body . "Email: " . $email . "<br>";
 	$email_body = $email_body . "Message: " . $message;
+	//Get first and last name
+	$split_name = explode(" ", $name);
+	$first_name = $split_name[0];
+	$last_name = $split_name[1];
 
 	if ($name == "" || $email == "" || $message == "") {
 		exit; 
 	}
 	
 	foreach ($_POST as $value) {
-		if (stripos($value, 'Content-Type:') !== FALSE {
+		if (stripos($value, 'Content-Type:') !== FALSE) {
 			exit;
 		}
 	}
@@ -63,17 +67,18 @@ include(ROOT_PATH . 'inc/header.php');
 			<p>Want to drop me line? I'd love to collaborate on a build. If you'd like, check out some of the <a href="<?php echo BASE_URL . 'projects.php'; ?>">little learning projects</a> I've been working on. Dangling preposition.</p>
 			
 			<?php
-				if (isset($_GET["status"]) && $_GET["status"] == "thanks") { ?>
-					<p class="thanks">Thanks for the email! I'll get back to you as soon as I can.</p>
+				if (isset($_GET["status"]) && $_GET["status"] == "thanks") { ?>																																														
+					<p class="thanks">You're fantastic! I'll get back to you as soon as I can. Thanks for the email.</p>
 				<?php } else { ?>		      		  
-
-					<form method='post'>
-						<input type='text' name='name' id='form-name' placeholder='Name'>
-						<input type='email' name='email' id='form-email' placeholder='Email'>
-						<textarea name='message' id='message' placeholder='Your incredible message'></textarea>
-						<input type='text' name='address' id='address' placeholder="Address">
-						<button type='submit' name='submit' id='submit'>Send to Steve!</button>
-					</form>
+					<div id='form-area'>
+						<form method='post' action='<?php echo ROOT_PATH . "contact.php"; ?> '>
+							<input type='text' name='name' id='name' placeholder='Name'>
+							<input type='email' name='email' id='email' placeholder='Email'>
+							<textarea name='message' id='message' placeholder='Your incredible message'></textarea>
+							<input type='text' name='address' id='address' placeholder="Address">
+							<button type='submit' name='submit' id='submit'>Send to Steve!</button>
+						</form>
+					</div>
 				<?php } ?>
 		</div>
 		

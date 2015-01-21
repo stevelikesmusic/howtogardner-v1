@@ -163,6 +163,9 @@ textarea {
   margin-bottom: 2em; }
 
 #submit:hover {
+  background: tomato; }
+
+#submit.disabled {
   background: #64A857; }
 
 .thanks {
