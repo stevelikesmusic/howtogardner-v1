@@ -9,12 +9,12 @@
         <title><?php echo $pageTitle; ?></title>
         <meta name="author" content="Steve Gardner">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="favicon.ico">
+		    <link rel="icon" href="favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+		    <link href='http://fonts.googleapis.com/css?family=PT+Sans:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
         <link rel="stylesheet" href="css/new.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>

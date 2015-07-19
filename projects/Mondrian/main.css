@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*Main Layout
+=========================*/
+
+
+body {
+  background: #aaa;
+}
+
+#wrapper {
+  max-width: 940px;  
+  margin: 10px auto;
+  background: #DAC8A3;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 2px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 1px 1px 5px white;
+}
+
+.col {
+  
+  /* border: 2px solid black; */
+	width: 204px;
+	display: inline-block;
+}
+
+ul {
+  list-style: none;
+}	
+
+  
+	
+/*Palette
+=========================*/	
+	
+.chooser {
+	float: left;
+        width: 25%;
+	margin-top: 30px;
+	padding-left: 20px;	
+}
+
+ul {
+  margin: 5px auto;
+}
+
+
+.button {
+	height: 50px;
+	width: 50px;
+	border: 1px solid #121212;	
+	transition: border-radius .5s, transform .5s;
+	
+}
+
+.button:hover {
+	border-radius: 50%;
+	-webkit-transform: rotate(45deg);
+	transition: border-radius .1s, transform .25;
+	
+}
+
+.red {	background-color: red; }
+.blue { background-color: blue; }
+.yellow { background-color: yellow; }
+.white { background-color: white; }
+.black {	background-color: black; }
+
+
+
+
+/*The Canvas
+=========================*/	
+		
+.cell {
+  background: white;
+  height: 200px;
+  width: 100%;
+  transition: background 1s;
+  border: 2px solid black;
+	padding: 0;
+}
+
+#mondrian {
+	width: 70%;        	
+	margin: 50px auto;
+	display: flex;  		
+}
+
+.col1, 
+.col2,
+.col3 {
+  border-right: 12px solid black;
+}
+
+.col2,
+.col3,
+.col4 {
+  border-left: none;
+}
+
+
+.row1, 
+.row2,
+.row3 {
+  border-bottom: 12px solid black;
+}
+
+.row2,
+.row3,
+.row4 {
+   border-top: none;
+}
+
+
+.row1 {
+	height: 100px;	
+}
+
+.row2 {
+  height: 250px;
+ 
+}
+
+
+.row3 {
+  height: 50px;  
+}
+
+
+
+/*The Canvas: Col 1
+=========================*/	
+
+.col1 {
+	float: left;
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+}
+
+.sub1, .sub2 {
+  height: 50%;  
+}
+
+.sub1 {
+  border: none;
+}
+
+.sub2 {
+  border-top: 12px solid black;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+
+
+
+
+/*The Canvas: Col 2
+=========================*/	
+
+.col2 {
+	float: left;
+	display: inline-block;
+	width: 300px;
+}
+
+
+
+/*The Canvas Col 3
+=========================*/	
+
+.col3 {
+	float: left;
+	display: inline-block;
+	width: 75px;
+	
+}
+
+
+/*The Canvas Col 4
+=========================*/	
+
+.col4 {
+	display: inline-block;
+	
+}

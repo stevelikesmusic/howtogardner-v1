@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono|Inconsolata);
+
+html {
+  box-sizing: border-box;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background: hsl(185,90%,65%); 
+}
+
+.container {
+  height: 500px;
+  width: 850px;
+  position: absolute;
+  top: 0;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-family: 'Oxygen Mono', monospace;
+}
+
+
+
+/*Parts: Day of the week
+=====================================*/
+
+#day {
+  font-size: 130px;
+  height: 118px;
+  margin-bottom: 50px;
+}
+
+
+
+/*Parts: Date
+=====================================*/
+
+#date {
+  font-size: 50px;
+  height: 59px;
+}
+
+
+/*Parts: Clock Container
+=====================================*/
+
+h1 {
+  font-size: 100px;  
+  margin-top: 30px;
+
+}
+
+button {
+  border: 2px solid hsla(180,70%,95%,.8);
+  width: 110px;
+  background: none;
+  color: hsla(180,70%,95%,.8);
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 35px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-right: 25px;
+  transition: .5s;
+  font-family: sans-serif;
+}
+
+button:hover {
+  border-color: hsla(180,0%,100%,1);
+  color: hsla(180,0%,100%,1);
+  box-shadow: 0 0 5px white;
+}

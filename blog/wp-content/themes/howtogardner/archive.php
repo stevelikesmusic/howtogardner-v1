@@ -25,10 +25,8 @@ include('header.php');
 
     </div>
     
-    <!-- Secondary Column -->
-    <div class='secondary'>
-        <h1>Sidebar</h1>
-    </div>
+    <?php get_sidebar(); ?>
+    
 </div>    
     
 <?php get_footer(); ?>

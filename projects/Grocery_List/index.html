@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grocery List | Steve Gardner</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+		<link rel="icon" href="htg.ico">
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Here's What We Need</h1>
+			<h3>ADD ITEM</h3>
+			<p><input type="text" id="new-item"><button>Add</button>			
+			</p>
+			<h3>THINGS TO GET</h3>
+			<ul id="toget">
+				<li><input type="checkbox"><label>Loaf of Bread</label><input type="text"><button   class="delete">Delete</button><button class="edit">Edit</button></li>
+				<li class="editMode"><input type="checkbox"><label>Container of Milk</label><input   type="text" value="Container of Milk"><button class="delete">Delete</button><button class="edit save">Save</button></li>
+			</ul>
+			<h3>BOUGHT</h3>
+			<ul id="bought">
+				<li><input type="checkbox" checked><label>Stick of Butter</label><input type="text"><button class="delete">Delete</button><button class="edit">Edit</button></li>
+			</ul>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

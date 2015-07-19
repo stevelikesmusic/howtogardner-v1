@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  text-align: center;
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+  background: rgba(220, 220, 220, 0.7); 
+  width: 525px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+button {
+  border-radius: 30px;
+  font-size: 2em;
+  border: none;
+  height: 55px;
+  width: 150px;
+  outline: 0;
+  font-family: Futura, sans-serif;
+  background: -webkit-linear-gradient(bottom, steelblue, royalblue);
+  color: #FCFCFC;
+  cursor: pointer;
+}
+
+

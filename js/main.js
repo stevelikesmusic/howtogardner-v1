@@ -87,19 +87,24 @@ $('form').on('submit', function(e) {
 	e.preventDefault();
 	var url = 'contact.php',
 			//Capture name and separate first and last
-			formName = $('#form-name').val(),
-			separateName = formName.split(" "),
-			lastName = separateName.pop().trim(),
-			firstName = separateName.trim(),
+			formName = $('#name').val(),
+			separateName = formName.split(" ");
+      console.log("Name: " + separateName);
+			var lastName = separateName.pop().trim();
+      console.log("Last Name: " + lastName);
+      console.log(separateName);
+			var firstName = separateName[0].trim();
+      console.log("First Name: " + firstName);
 			//Collect form input fields
-			dataString = $(this).serialize();
+			var dataString = $(this).serialize();
+      console.log("Data: " + dataString);
 			//Send form input values to mailer
 			$.post(url, dataString, function(response) {
 				//$('form').hide();
 				console.log("Response: " + response);
 				var thanks = "<p class='thanks'>" + firstName + ", you're fantastic! <br>I'll get back to you as soon as I can. Thanks for the email.</p>";
 				$('#form-area').html(thanks);
-			});						 
+			});						
 });
 
 

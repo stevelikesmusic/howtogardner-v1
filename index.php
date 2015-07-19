@@ -3,7 +3,7 @@ require_once('inc/config.php');
 
 $section = "";
 $pageTitle = 'How to Gardner | Stephen Gardner';
-include(ROOT_PATH . 'inc/header.php');
+include(ROOT_PATH . '/inc/header.php');
 
 ?>
 	<div id="main">
@@ -13,4 +13,4 @@ include(ROOT_PATH . 'inc/header.php');
 			<p>Everything you need to know from beginning to advanced Gardnering. I've been a Gardner my entire life &mdash; sometimes you're just born with it. Learning to Gardner is, of course, an ongoing process. The best place to start is familiarizing yourself with everything I know about being a Gardner.</p>
 		</div>
 
-<?php include(ROOT_PATH . 'inc/footer.php');
+<?php include(ROOT_PATH . '/inc/footer.php');
