@@ -348,31 +348,52 @@ a:focus {
   /* Style adjustments for viewports that meet the condition */
   header {
     display: flex;
-    justify-content: space-between; }
-
-  #logo {
-    margin: .5em 0 1em 2.5em; }
-
-  nav {
-    margin-right: 1.5em; }
+    justify-content: space-between;
+    align-items: center; }
+    header #logo {
+      margin: 0 0 0 10px; }
+      header #logo a {
+        font-size: .9em; }
+    header nav ul {
+      margin: 0; }
+      header nav ul li a {
+        font-size: .875em; }
 
   #main {
     display: flex;
     justify-content: space-around; }
 
   .intro h1 {
-    font-size: 1.75em; }
+    font-size: 1.5em; }
 
   .intro {
     margin-top: 12%;
     max-width: 45%; } }
-@media only screen and (min-width: 67.5em) {
+.social {
+  justify-content: center;
+  padding: 0; }
+  .social li {
+    padding-left: .3em; }
+    .social li a {
+      margin-right: .625em;
+      padding: .4375em; }
+
+@media only screen and (min-width: 49.68em) {
   #logo {
     font-size: 2em;
     margin: .25em 0 .5em 1.5em; }
 
   nav {
-    font-size: 1.25em; } }
+    font-size: 1.25em; }
+
+  .intro h1 {
+    font-size: 1.75em; } }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px; }
+
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
