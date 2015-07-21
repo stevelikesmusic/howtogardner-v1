@@ -118,6 +118,7 @@ $tablet-font: 1em;
 body {
 	background: #000;
 	color: $primary-text;
+  position: relative;
 }
 
 header {
@@ -176,6 +177,28 @@ h1 {
   }
 }
 
+
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+#overlay {
+  display: none;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  img {
+    position: fixed;
+    max-width: 35%;
+    max-height: 550px;
+    transform: translate(-50%, 5%);  
+  }
+}
 
 
 
@@ -247,33 +270,6 @@ textarea {
 
 
 /* ==========================================================================
-   Footer
-   ========================================================================== */
-
-.social {
-	list-style: none;
-	display: flex;
-  align-items: center;
-  justify-content: space-between;
-	padding: 0;
-  li {
-    padding-left: .3em;
-     a {
-       
-	     margin-right: .625em;
-	     padding: .4375em;
-     }
-  }
-}
-
-.right {
-  font-size: $mobile-font;
-  text-align: center;
-}
-
-
-
-/* ==========================================================================
    Projects
    ========================================================================== */
 
@@ -298,10 +294,9 @@ textarea {
       max-height: 100%;
       display: block;
     }
-  }
-  
+  }  
   .project-view .mask {
-    padding: 5px 7.5px;
+    padding: 5px 20px;
     min-width: 200px;
     height: 100%;
     width: 101%;
@@ -312,14 +307,54 @@ textarea {
     left: 0;
     transform: translateX(-100%);
     transition: all .5s;
+    
+    a {
+      position: absolute;
+      left: 35%;
+      top: 70%;
+      border: 2px solid white;
+      padding: .25em .5em;
+      font-weight: 700;
+    }
+    a:hover {
+      background: white;
+    }
   }
-  
-  .project-view:hover .mask {
+  :hover .mask {
     transform: translateX(.05%);
   }
   
 }
 
+
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.social {
+	list-style: none;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+	padding: 0;
+  li {
+    padding-left: .3em;
+     a {
+       
+	     margin-right: .625em;
+	     padding: .4375em;
+     }
+  }
+}
+
+.right {
+  font-size: $mobile-font;
+  text-align: center;
+  padding-right: 1.25em;
+}
 
 
 

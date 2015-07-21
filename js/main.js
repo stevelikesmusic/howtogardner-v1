@@ -1,10 +1,38 @@
 //Add a loop to add events to links
 
-var adina = $('#adina'),
+var overlay = document.createElement('div'), 
+    adina = $('#adina'),
 		baxter = $('#baxter'),
-		wedding = $('#wedding');
+		wedding = $('#wedding'),
+    body = document.querySelector('body'),
+    
+    image = document.createElement('img');
 	
+var linkPhotos = [adina, baxter, wedding];
 
+overlay.setAttribute('id', 'overlay');
+overlay.appendChild(image);
+body.appendChild(overlay);
+
+
+//Set click handler on links with images
+for (var i = 0, length = linkPhotos.length; i < length; i++) {
+  linkPhotos[i].on('click', function(e) {
+    e.preventDefault();
+    var imageName = e.target.id,
+        href = 'img/' + imageName + '.jpg';
+    
+    image.setAttribute('src', href);
+    overlay.style.display = 'block';
+  });
+}
+
+//Hide overlay when clicked
+overlay.onclick = function() {
+  overlay.style.display = 'none';
+};
+
+/*
 var changeTo = function(photoName) {
 	$('#portrait').attr('src', 'img/' + photoName + '.jpg');
 }
@@ -39,7 +67,7 @@ wedding.mouseleave(changeBack);
 wedding.on('click', function(e) {
 	e.preventDefault();
 });
-
+*/
 
 
 /*=====================================================

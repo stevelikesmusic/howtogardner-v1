@@ -86,7 +86,8 @@ html {
 
 body {
   background: #000;
-  color: #eee; }
+  color: #eee;
+  position: relative; }
 
 header {
   font-family: "PT Sans", arial, sans-serif; }
@@ -128,6 +129,24 @@ h1 {
     font-size: 1.25em;
     max-width: 410px;
     margin: 0 auto; }
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+#overlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center; }
+  #overlay img {
+    position: fixed;
+    max-width: 35%;
+    max-height: 550px;
+    transform: translate(-50%, 5%); }
 
 /* ==========================================================================
    Contact
@@ -183,25 +202,6 @@ textarea {
   display: none; }
 
 /* ==========================================================================
-   Footer
-   ========================================================================== */
-.social {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0; }
-  .social li {
-    padding-left: .3em; }
-    .social li a {
-      margin-right: .625em;
-      padding: .4375em; }
-
-.right {
-  font-size: 0.9em;
-  text-align: center; }
-
-/* ==========================================================================
    Projects
    ========================================================================== */
 .description p {
@@ -224,7 +224,7 @@ textarea {
       max-height: 100%;
       display: block; }
   #projects .project-view .mask {
-    padding: 5px 7.5px;
+    padding: 5px 20px;
     min-width: 200px;
     height: 100%;
     width: 101%;
@@ -235,8 +235,37 @@ textarea {
     left: 0;
     transform: translateX(-100%);
     transition: all .5s; }
-  #projects .project-view:hover .mask {
+    #projects .project-view .mask a {
+      position: absolute;
+      left: 35%;
+      top: 70%;
+      border: 2px solid white;
+      padding: .25em .5em;
+      font-weight: 700; }
+    #projects .project-view .mask a:hover {
+      background: white; }
+  #projects :hover .mask {
     transform: translateX(0.05%); }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0; }
+  .social li {
+    padding-left: .3em; }
+    .social li a {
+      margin-right: .625em;
+      padding: .4375em; }
+
+.right {
+  font-size: 0.9em;
+  text-align: center;
+  padding-right: 1.25em; }
 
 /* ==========================================================================
    Links
