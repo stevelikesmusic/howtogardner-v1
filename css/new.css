@@ -144,8 +144,7 @@ h1 {
   text-align: center; }
   #overlay img {
     position: fixed;
-    max-width: 35%;
-    max-height: 550px;
+    max-width: 60%;
     transform: translate(-50%, 5%); }
 
 /* ==========================================================================
@@ -272,7 +271,8 @@ textarea {
    ========================================================================== */
 #adina,
 #baxter,
-#wedding {
+#wedding,
+#august {
   outline: 0; }
 
 /* ==========================================================================
@@ -451,6 +451,11 @@ a:focus {
 
   .intro h1 {
     font-size: 1.75em; }
+
+  #overlay img {
+    max-width: 35%;
+    max-height: 550px;
+    transform: translate(-50%, 5%); }
 
   .footer {
     display: flex;

@@ -4,11 +4,12 @@ var overlay = document.createElement('div'),
     adina = $('#adina'),
 		baxter = $('#baxter'),
 		wedding = $('#wedding'),
+    august = $('#august'),
     body = document.querySelector('body'),
     
     image = document.createElement('img');
 	
-var linkPhotos = [adina, baxter, wedding];
+var linkPhotos = [adina, baxter, wedding, august];
 
 overlay.setAttribute('id', 'overlay');
 overlay.appendChild(image);
