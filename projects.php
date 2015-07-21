@@ -10,27 +10,51 @@ include(ROOT_PATH . 'inc/header.php');
 <section>
   <div class='description'>
     <h1>Projects</h1>
-    <p>Here are some projects I've worked on while learning to code. Inspirations came from Andrew Chalkers at Treehouse, Jen DeWalt, and <a href='http://rileyh.com/'>Riley Hilliard</a>. </p>
+    <p>Here are some projects I've worked on while learning to code. Inspirations came from <a href="https://www.twitter.com/chalkers">Andrew Chalkley</a> at <a href='http://referrals.trhou.se/stevegardner'>Treehouse</a>, <a href="http://www.theodinproject.com">The Odin Project</a>, <a href="https://www.twitter.com/jenniferdewalt">Jennifer DeWalt</a>, and <a href="https://www.twitter.com/rileyhSD">Riley Hilliard</a>.</p>
   </div>
   <div class='collection'>
     <ul id='projects'>
-      <li>
+      <li class='project-view'>
         <a href='projects/Quiz/index.html'><img src='img/quiz.PNG'></a>
+        <div class='mask'>
+          <h2>The Quixotic Quiz</h2>
+          <p>JavaScript</p>
+        </div>
       </li>
-      <li>
+      <li class='project-view'>
         <a href='projects/Etch/index.html'><img src='img/etch.png'></a>
+        <div class='mask'>
+          <h2>Etch-A-Sketch</h2>
+          <p>JavaScript and jQuery</p>
+        </div>
       </li>
-      <li>
+      <li class='project-view'>
         <a href="projects/Clock/index.html"><img src="img/clock.png"></a>
+        <div class='mask'>
+          <h2>Counting Clock</h2>
+          <p>JavaScript</p>
+        </div>
       </li>
-      <li>
+      <li class='project-view'>
         <a href="projects/Grocery_List/index.html"><img src="img/list.PNG"></a>
+        <div class='mask'>
+          <h2>Todo List</h2>
+          <p>JavaScript and jQuery</p>
+        </div>
       </li>
-      <li>
+      <li class='project-view'>
         <a href="projects/Mondrian/index.html"><img src="img/mondrian.PNG"></a>
+        <div class='mask'>
+          <h2>Mondrian Painter</h2>
+          <p>jQuery</p>
+        </div>
       </li>
-      <li>
+      <li class='project-view'>
         <a href="projects/Random_Background_Color/index.html"><img src="img/randomcolor.PNG"></a>
+        <div class='mask'>
+          <h2>The Quixotic Quiz</h2>
+          <p>JavaScript Quiz App</p>
+        </div>
       </li>
     </ul>
   </div>

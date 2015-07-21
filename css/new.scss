@@ -97,6 +97,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 $primary-color: #76F54A;
 $secondary-color: #2CA900;
 $link: #C3FFAD;
@@ -269,22 +277,52 @@ textarea {
    Projects
    ========================================================================== */
 
+.description p {
+  padding: 30px;
+}
+
 #projects {
   padding: 2.5px 10px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  li {
-    padding: 5px 2.5px;
-    max-width: 30%;
+  .project-view {
+    margin: 5px 5px;
+    max-width: 90%;
     min-width: 200px;
+    position: relative;
+    overflow: hidden;
     img {
       max-width: 100%;
       max-height: 100%;
+      display: block;
     }
   }
+  
+  .project-view .mask {
+    padding: 5px 7.5px;
+    min-width: 200px;
+    height: 100%;
+    width: 101%;
+    background: $secondary-color;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s;
+  }
+  
+  .project-view:hover .mask {
+    transform: translateX(.05%);
+  }
+  
 }
+
+
+
+
 
 /* ==========================================================================
    Links
@@ -317,11 +355,13 @@ a:visited {
 	text-decoration: none;
 }
 
-.intro a {
+.intro a, 
+.description a {
 	color: $link;
 }
 
-.intro a:hover {
+.intro a:hover,
+.description a:hover {
 	color: $primary-color;
 	border-bottom: 1px solid $primary-color;
 }
@@ -343,16 +383,6 @@ a:focus {
 		 }
 	}
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -469,6 +499,7 @@ a:focus {
 	
 	
 	header {
+    padding: 20px;
 		display: flex;
 		justify-content: space-between;
     align-items: center;
@@ -499,23 +530,35 @@ a:focus {
 		margin-top: 12%;
 		max-width: 45%;
 	}
-}
-
-.social {
-  justify-content: center;
-	padding: 0;
-  li {
-    padding-left: .3em;
-     a {
-       
-	     margin-right: .625em;
-	     padding: .4375em;
-     }
+  
+  #projects {
+    .project-view {
+      max-width: 30%;
+      min-width: 200px;
+    }
   }
-}
+
+  .social {
+    justify-content: center;
+    padding: 0;
+    li {
+      padding-left: .3em;
+       a {
+
+         margin-right: .625em;
+         padding: .4375em;
+       }
+    }
+  }
+  
+} /* End tablet media query */
+
+
 
 @media only screen and (min-width: 49.68em) {
-	#logo {
+  
+  
+  #logo {
 		font-size: 2em;
 		margin: .25em 0 .5em 1.5em;
 	}
@@ -527,14 +570,17 @@ a:focus {
   .intro h1 {
 		font-size: 1.75em;
 	}
-}
-
-.footer {
+  
+  .footer {
 	display: flex;
   align-items: center;
 	justify-content: space-between;
   padding: 15px;
+  }
+  
 }
+
+
 
 
 

@@ -4,11 +4,11 @@
 		<!-- <span>Do get in touch.</span><br> -->
 		<ul class='social'>
 			<!-- Icons by <div>Icons made by <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a>, <a href="http://yanlu.de" title="Yannick">Yannick</a>, <a href="http://www.simpleicon.com" title="SimpleIcon">SimpleIcon</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
-			<li><a class='flaticon-email' href='mailto:gardnersj@gmail.com'></a></li>
-			<li><a class='flaticon-twitter' href='http://www.twitter.com/stevelikesmusic'></a></li>
-			<li><a class='flaticon-facebook' href='http://www.facebook.com/gardnersj'></a></li>
-			<li><a class='flaticon-linkedin' href='http://www.linkedin.com/in/gardnersj'></a></li>
-			<li><a class='flaticon-instagram' href='http://www.instagram.com/stevelikesmusic'></a></li>
+			<li><a class='flaticon-email' href='mailto:steve@howtogardner.com'></a></li>
+			<li><a class='flaticon-twitter' href='https://www.twitter.com/stevelikesmusic'></a></li>
+			<li><a class='flaticon-facebook' href='https://www.facebook.com/gardnersj'></a></li>
+			<li><a class='flaticon-linkedin' href='https://www.linkedin.com/in/gardnersj'></a></li>
+			<li><a class='flaticon-instagram' href='https://www.instagram.com/stevelikesmusic'></a></li>
 			<li><a class='flaticon-github' href='http://www.github.com/stevelikesmusic'></a></li>		
 		</ul>
 	</div>

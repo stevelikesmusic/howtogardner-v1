@@ -2,7 +2,6 @@
 
 var adina = $('#adina'),
 		baxter = $('#baxter'),
-		treehouse = $('#treehouse'),
 		wedding = $('#wedding');
 	
 
@@ -31,13 +30,6 @@ baxter.mouseleave(changeBack);
 baxter.on('click', function(e) {
 	e.preventDefault();
 });
-
-//Treehouse link
-treehouse.mouseenter(function() {
-	$('#portrait').attr('src', 'http://wac.a8b5.edgecastcdn.net/80A8B5/static-assets/assets/content/referral-badge-grn.png');
-});
-
-treehouse.mouseleave(changeBack);
 
 //Wedding link
 wedding.mouseenter(function() {

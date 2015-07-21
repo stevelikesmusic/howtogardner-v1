@@ -78,6 +78,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
   background: #000;
   color: #eee; }
@@ -198,19 +204,39 @@ textarea {
 /* ==========================================================================
    Projects
    ========================================================================== */
+.description p {
+  padding: 30px; }
+
 #projects {
   padding: 2.5px 10px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
-  #projects li {
-    padding: 5px 2.5px;
-    max-width: 30%;
-    min-width: 200px; }
-    #projects li img {
+  #projects .project-view {
+    margin: 5px 5px;
+    max-width: 90%;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden; }
+    #projects .project-view img {
       max-width: 100%;
-      max-height: 100%; }
+      max-height: 100%;
+      display: block; }
+  #projects .project-view .mask {
+    padding: 5px 7.5px;
+    min-width: 200px;
+    height: 100%;
+    width: 101%;
+    background: #2CA900;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s; }
+  #projects .project-view:hover .mask {
+    transform: translateX(0.05%); }
 
 /* ==========================================================================
    Links
@@ -234,10 +260,12 @@ a:visited {
   color: #eee;
   text-decoration: none; }
 
-.intro a {
+.intro a,
+.description a {
   color: #C3FFAD; }
 
-.intro a:hover {
+.intro a:hover,
+.description a:hover {
   color: #76F54A;
   border-bottom: 1px solid #76F54A; }
 
@@ -347,6 +375,7 @@ a:focus {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
   header {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -368,16 +397,21 @@ a:focus {
 
   .intro {
     margin-top: 12%;
-    max-width: 45%; } }
-.social {
-  justify-content: center;
-  padding: 0; }
-  .social li {
-    padding-left: .3em; }
-    .social li a {
-      margin-right: .625em;
-      padding: .4375em; }
+    max-width: 45%; }
 
+  #projects .project-view {
+    max-width: 30%;
+    min-width: 200px; }
+
+  .social {
+    justify-content: center;
+    padding: 0; }
+    .social li {
+      padding-left: .3em; }
+      .social li a {
+        margin-right: .625em;
+        padding: .4375em; } }
+/* End tablet media query */
 @media only screen and (min-width: 49.68em) {
   #logo {
     font-size: 2em;
@@ -387,13 +421,13 @@ a:focus {
     font-size: 1.25em; }
 
   .intro h1 {
-    font-size: 1.75em; } }
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px; }
+    font-size: 1.75em; }
 
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px; } }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
