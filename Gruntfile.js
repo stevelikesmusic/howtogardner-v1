@@ -30,6 +30,9 @@ module.exports = function(grunt) {
         dest: 'js/build/main.min.js'
       }
     },
+    imagemin: {
+      
+    }
     watch: {
       files: ['js/main.js'],
       tasks: ['jshint']
@@ -40,6 +43,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
   grunt.registerTask('default', ['jshint', 'uglify']);
