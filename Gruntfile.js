@@ -32,7 +32,18 @@ module.exports = function(grunt) {
     },
     imagemin: {
       
-    }
+    },
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer-core')({browsers: 'last 2 versions'}),
+          //require('cssnano')()
+          ]
+      },
+      dist: {
+        src: 'css/new.css'
+      } 
+    },
     watch: {
       files: ['js/main.js'],
       tasks: ['jshint']
@@ -44,6 +55,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-postcss');
 
   // Default task(s).
   grunt.registerTask('default', ['jshint', 'uglify']);
