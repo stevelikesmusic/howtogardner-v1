@@ -21,7 +21,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 		<header>
-			<div id="logo"><a href="http://localhost/howtogardner">How to Gardner</a></div>
+			<div id="logo"><a href="http://www.howtogardner.com">How to Gardner</a></div>
 			<nav>
 				<ul>
 					<li><a class="<?php if ($section == 'about') {echo 'on';} ?>" href="<?php echo BASE_URL . 'about.php'; ?>">About</a></li>

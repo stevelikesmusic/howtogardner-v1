@@ -1,9 +1,9 @@
 <?php 
-require_once('inc/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/inc/config.php');
 
 $pageTitle = 'About | How to Gardner';
 $section = 'about';
-include(ROOT_PATH . 'inc/header.php');
+include(ROOT_PATH . '/inc/header.php');
 ?>
 
 	<div id="main">
@@ -18,4 +18,4 @@ include(ROOT_PATH . 'inc/header.php');
 			<p>After a fun cross country road trip from Santa Monica, we are currently coming at you from downtown Indianapolis.</p>
 		</div>
 			
-<?php include(ROOT_PATH . 'inc/footer.php');
+<?php include(ROOT_PATH . '/inc/footer.php');

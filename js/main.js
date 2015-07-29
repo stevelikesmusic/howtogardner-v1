@@ -33,43 +33,6 @@ overlay.onclick = function() {
   overlay.style.display = 'none';
 };
 
-/*
-var changeTo = function(photoName) {
-	$('#portrait').attr('src', 'img/' + photoName + '.jpg');
-}
-
-var changeBack = function() {
-	$('#portrait').attr('src', 'img/steve.jpg');
-}
-
-//Adina link
-adina.mouseenter(function() {
-	$('#portrait').attr('src', 'img/adina.jpg');
-});
-adina.on('click', function(e) {
-	e.preventDefault();
-});
-$('#adina').mouseleave(changeBack);
-
-//Baxter link
-baxter.mouseenter(function() {
-	$('#portrait').attr('src', 'img/baxter.jpg');
-});
-baxter.mouseleave(changeBack);
-baxter.on('click', function(e) {
-	e.preventDefault();
-});
-
-//Wedding link
-wedding.mouseenter(function() {
-	$('#portrait').attr('src', 'img/wedding.jpg');
-});
-wedding.mouseleave(changeBack);
-wedding.on('click', function(e) {
-	e.preventDefault();
-});
-*/
-
 
 /*=====================================================
 Form 

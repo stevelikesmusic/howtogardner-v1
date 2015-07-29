@@ -1,5 +1,5 @@
 <?php 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/howtogardner/inc/config.php');
+//require_once($_SERVER['DOCUMENT_ROOT'] . '/howtogardner/inc/config.php');
 
 $section = 'blog';
 $pageTitle = 'Blog | How to Gardner';

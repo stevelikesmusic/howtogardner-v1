@@ -1,9 +1,9 @@
-<?php
-require_once('inc/config.php');
+<?php 
+require_once($_SERVER['DOCUMENT_ROOT'] . '/inc/config.php');
 
 $pageTitle = 'Projects | How to Gardner';
 $section = 'projects';
-include(ROOT_PATH . 'inc/header.php');
+include(ROOT_PATH . '/inc/header.php');
 
 ?>
 
@@ -23,7 +23,7 @@ include(ROOT_PATH . 'inc/header.php');
         </div>
       </li>
       <li class='project-view'>
-        <a href='projects/Etch/index.html'><img src='img/etch.png'></a>
+        <a href='projects/Etch/index.html'><img src='img/etch.PNG'></a>
         <div class='mask'>
           <h2>Etch-A-Sketch</h2>
           <p>JavaScript and jQuery</p>
@@ -31,7 +31,7 @@ include(ROOT_PATH . 'inc/header.php');
         </div>
       </li>
       <li class='project-view'>
-        <a href="projects/Clock/index.html"><img src="img/clock.png"></a>
+        <a href="projects/Clock/index.html"><img src="img/clock.PNG"></a>
         <div class='mask'>
           <h2>Counting Clock</h2>
           <p>JavaScript</p>
@@ -67,4 +67,4 @@ include(ROOT_PATH . 'inc/header.php');
 </section>
 
 
-<?php include(ROOT_PATH . 'inc/footer.php'); ?>
+<?php include(ROOT_PATH . '/inc/footer.php'); ?>
