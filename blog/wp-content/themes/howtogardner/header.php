@@ -24,10 +24,10 @@
 			<div id="logo"><a href="http://www.howtogardner.com">How to Gardner</a></div>
 			<nav>
 				<ul>
-					<li><a class="<?php if ($section == 'about') {echo 'on';} ?>" href="<?php echo BASE_URL . 'about.php'; ?>">About</a></li>
-					<li><a class="<?php if ($section == 'projects') {echo 'on';} ?>" href="<?php echo BASE_URL . 'projects.php'; ?>">Projects</a></li>
-					<li><a class="<?php if ($section == 'contact') {echo 'on';} ?>" href="<?php echo BASE_URL . 'contact.php'; ?>">Contact</a></li>
-					<li><a class="<?php if ($section == 'blog') {echo 'on';} ?>" href="<?php echo BASE_URL . 'blog/'; ?>">Blog</a></li>
+					<li><a class="<?php if ($section == 'about') {echo 'on';} ?>" href="<?php echo 'http://www.howtogardner.com/about.php'; ?>">About</a></li>
+					<li><a class="<?php if ($section == 'projects') {echo 'on';} ?>" href="<?php echo 'http://www.howtogardner.com/projects.php'; ?>">Projects</a></li>
+					<li><a class="<?php if ($section == 'contact') {echo 'on';} ?>" href="<?php echo 'http://www.howtogardner.com/contact.php'; ?>">Contact</a></li>
+					<li><a class="<?php if ($section == 'blog') {echo 'on';} ?>" href="<?php echo 'http://www.blog.howtogardner.com'; ?>">Blog</a></li>
 				</ul>
 			</nav>
 		</header>

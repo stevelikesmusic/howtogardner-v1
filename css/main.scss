@@ -294,19 +294,19 @@ textarea {
       display: block;
     }
   }  
-  .project-view .mask {
+  /* .project-view .mask {
     padding: 5px 20px;
     min-width: 200px;
     height: 100%;
     width: 101%;
-    background: $secondary-color;
+    background: $primary-text;
     overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(-100%);
+    opacity: 0;
     transition: all .5s;
-    
+    color: $secondary-color;
     a {
       position: absolute;
       left: 35%;
@@ -320,9 +320,12 @@ textarea {
     }
   }
   :hover .mask {
-    transform: translateX(.05%);
+    opacity: .4;
   }
-  
+  :hover .mask-content {
+    opacity: 1;
+  }
+  */
 }
 
 

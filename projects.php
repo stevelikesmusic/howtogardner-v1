@@ -15,52 +15,22 @@ include(ROOT_PATH . '/inc/header.php');
   <div class='collection'>
     <ul id='projects'>
       <li class='project-view'>
-        <a href='projects/Quiz/index.html'><img src='img/quiz.PNG'></a>
-        <div class='mask'>
-          <h2>The Quixotic Quiz</h2>
-          <p>JavaScript</p>
-          <a href='projects/Quiz/index.html'>Check it out</a>
-        </div>
+        <a href='projects/Quiz/index.html'><img src='img/quiz.PNG'></a>   
       </li>
       <li class='project-view'>
         <a href='projects/Etch/index.html'><img src='img/etch.PNG'></a>
-        <div class='mask'>
-          <h2>Etch-A-Sketch</h2>
-          <p>JavaScript and jQuery</p>
-          <a href='projects/Etch/index.html'>Check it out</a>
-        </div>
       </li>
       <li class='project-view'>
         <a href="projects/Clock/index.html"><img src="img/clock.PNG"></a>
-        <div class='mask'>
-          <h2>Counting Clock</h2>
-          <p>JavaScript</p>
-          <a href='projects/Clock/index.html'>Check it out</a>
-        </div>
       </li>
       <li class='project-view'>
-        <a href="projects/Grocery_List/index.html"><img src="img/list.PNG"></a>
-        <div class='mask'>
-          <h2>Todo List</h2>
-          <p>JavaScript</p>
-          <a href='projects/Grocery/index.html'>Check it out</a>
-        </div>
+        <a href="projects/Grocery_List/index.html"><img src="img/list.PNG"></a>       
       </li>
       <li class='project-view'>
         <a href="projects/Mondrian/index.html"><img src="img/mondrian.PNG"></a>
-        <div class='mask'>
-          <h2>Mondrian Painter</h2>
-          <p>jQuery</p>
-          <a href='projects/Mondrian/index.html'>Check it out</a>
-        </div>
       </li>
       <li class='project-view'>
         <a href="projects/Random_Background_Color/index.html"><img src="img/randomcolor.PNG"></a>
-        <div class='mask'>
-          <h2>Generate Random Background Color</h2>
-          <p>JavaScript</p>
-          <a href='projects/Random_Background_Color/index.html'>Check it out</a>
-        </div>
       </li>
     </ul>
   </div>

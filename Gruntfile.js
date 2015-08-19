@@ -41,7 +41,7 @@ module.exports = function(grunt) {
           ]
       },
       dist: {
-        src: 'css/new.css'
+        src: 'css/main.css'
       } 
     },
     watch: {
